@@ -1,0 +1,405 @@
+*{
+    margin: 0;
+    background-color: rgba(14, 13, 13, 0.911);
+}
+
+
+body{
+    background-color: black;
+    align-content: center;
+}
+/* ESTILO MENÚ CON SUBMENÚ */
+header{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+   
+
+}
+
+div .logo{
+    width: 12vw;
+    display: block;
+    
+}
+header nav{
+    display: flex;
+}
+ul.Menu {
+    list-style: none;
+    display: flex;
+    
+}
+
+.Menu li{    
+   
+        display: flex;
+        position: relative;
+        font-size: 0.8rem;
+        justify-content: space-around;
+        padding: 0.3rem;
+        margin-right: 10px;
+           
+    
+ }
+
+ .Menu li:hover{
+    color: rgb(238, 193, 44);
+    
+      
+}
+
+ul li:hover ul{
+    margin-top: 2rem;
+}
+
+ul.Menu ul {
+    position: absolute;
+    display: none;
+}
+
+ul ul li.subMenu {
+    display: block;
+    padding-top: 5px;
+    border: none;
+}
+
+ul li:hover ul {
+    display: block;
+    box-shadow: 3px 3px grey;
+}
+    
+
+
+nav ul li a:link{
+    text-decoration: none;
+}
+
+nav ul li a{
+    list-style: none;
+    color:white;
+    font-variant: small-caps;
+    font-stretch: semi-expanded;
+  
+    /*Subrayado animado*/
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .3s;
+    }
+
+a:hover, a:focus {
+background-size: 100% 2px;
+color: rgb(238, 193, 44);
+box-shadow: inset;
+}
+    
+.imagen {
+width: 100%;
+border-top: white 100%;
+border-top-style:ridge;
+padding-top: 5px;
+text-align: center;
+
+}
+.imagen img{
+    width: 90%;
+    height: 80vh;
+}
+
+.imagen img:hover{
+    opacity: 0.7;
+}
+
+.imagen h2{
+    position:absolute;
+    top: 280px;
+    left: 66px;
+    background-color: transparent;
+    font-size: 1.8rem;
+    color:white;
+    margin-right: 20px;
+}
+h4{
+    color: rgb(238, 193, 44);
+    font-family: 'Lora', serif;
+    font-size: 1.2em;
+
+
+}
+.centro{
+    float: none;
+    font-size: 0.80em;
+    font-family: 'Lora', serif;;
+    line-height: 25px;
+    color: white;
+    font-weight: 300;
+    padding: 20px 10px;
+    text-align: justify;
+   
+      
+}
+
+.centro h1{     
+    color: rgb(238, 193, 44);
+    font-family: 'Lora', serif;
+    margin-top: 40px;
+    font-size: 1.3em;
+}
+
+.division{
+    padding-top: 20px;
+    padding-bottom: 10px;
+    text-transform:uppercase;
+    
+}
+h2{
+    color: rgb(238, 193, 44);
+    font-family: 'Lora', serif;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.grid{
+    display: grid;   
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    padding: 60px ;
+    justify-content: center;
+    margin-right: 20px;
+   
+    
+
+}
+
+.grid img{
+    width: 100%;
+    padding: 10px;
+    box-shadow: 10px 10px 1px 1px rgba(0,0,0,0.75);
+}
+
+.scale:hover{
+	transform: scale(1.4);
+	transition: transform 1s;
+	cursor: pointer
+}
+
+form {
+    border-top: white 100%;
+    border-top-style:ridge;
+    padding: 20px 20px 20px 40px;
+    color: white;
+    margin-top: 80px;
+    line-height: 30px;
+}
+form h3{
+    color: white;
+    padding-bottom: 20px;
+   
+}
+.clientes{
+    display: flex;
+    justify-content: space-between;
+    padding: 70px;
+    margin-left: 20px;
+    margin-right: 20px;
+    background:linear-gradient(rgba(138, 95, 10, 0.979),rgba(155, 154, 152, 0.158));
+    flex-wrap: wrap;
+    font-style: italic;
+    font-weight: bolder;
+    font-size: 1.1rem;
+    text-align: center;
+     
+  }
+.Cliente1{
+    border-radius: 15px 50px;
+    background:rgb(238, 193, 44);
+    padding: 20px;
+    width: 200px;
+    margin-top: 20px;
+       
+}
+.Cliente1:hover,:focus{
+    background:rgb(223, 212, 177);
+
+}
+.Boton{
+    background-color:rgb(238, 193, 44);
+
+}
+ .Boton:hover,:focus form{
+    background: rgb(237,189,10);
+    background: radial-gradient(circle, rgba(237,189,10,0.9136029411764706) 44%, rgba(97,97,95,1) 100%);
+}
+
+.pie{
+    display: flex;
+    justify-content: space-between;
+    border-top: white 100%;
+    border-top-style:inset;
+    padding-top: 5px;
+    
+    
+}
+
+.redes{    
+    display: inline-flex;
+     
+      
+   }
+
+.redes img{
+    margin-right: 40px;
+    width: 30px;
+    height: 30px;
+}
+
+.centroQuienesSomos{
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.centroQuienesSomos img{
+    width: auto;
+    padding: 10px 20px;
+    border-radius: 30px;
+    
+}
+
+.centroQuienesSomos p{
+    margin-bottom: 10px;
+    color: white;
+    font-size: 1em;
+    font-family: 'Lora', serif;
+    line-height: 25px;
+    margin-left: 10px;
+    text-align: justify;
+    padding-right: 20px;
+}
+
+
+
+.galeria{
+    display: flex;
+    width: 90vw;
+    margin: 20px 20px;
+    flex-wrap: wrap;
+   justify-content: center;
+
+
+    }
+.galeria img{
+    width: 250px;
+    height: auto;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    padding: 10px;
+}
+
+.galeria_grid{
+
+    display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: repeat(8, auto);
+	margin-top: 30px;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    align-items: center;
+    padding: 10px;
+    
+}
+.galeria_grid img{
+    width: 100%;
+}
+
+.rotate:hover{
+	transform: rotateZ(-45deg);
+	transition: transform 1s;
+	cursor: pointer;
+}
+
+@media only screen and (min-width: 768px){
+	.galeria_grid{
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(4, auto);
+		grid-gap: 10px;
+	}
+    .Menu li{    
+   
+        font-size: 1rem;
+        padding: 0.3rem;
+              
+   
+ }
+ div .logo{
+    width: 10vw;
+       
+}
+.centro{
+    float: left;
+    font-size: 1em;
+    width: 60%;
+      
+}
+
+.grid{
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+    
+   }
+   .centroQuienesSomos{
+    flex-direction: row;
+   
+}
+
+.centroQuienesSomos img{
+    width: 30vw;
+    padding: 10px 20px;
+    
+}
+
+.centroQuienesSomos p{
+    font-size: 1.3em;
+    
+    
+}
+
+}
+@media only screen and (min-width:1100px){
+	.galeria_grid{
+		grid-template-columns: repeat(4, 1fr);
+		grid-template-rows: repeat(2, auto);
+	}
+    .Menu li{    
+   
+        padding: 0.5rem;
+           
+    
+ }
+ div .logo{
+    width: 10vw;
+       
+}
+.centro{
+    float: left;
+    font-size: 1.3em;
+      
+}
+.grid{
+      
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+      }
+  
+}
+
+    
+   
+
+
+	
+
+

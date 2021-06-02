@@ -1,0 +1,73 @@
+ul.Menu {
+    list-style: none;
+    display: flex;
+    
+}
+
+
+
+    
+      
+.Menu li{    
+   
+    display: flex;
+    position: relative;
+    font-size: 0.8rem;
+    justify-content: space-around;
+    padding: 0.3rem;
+    margin-right: 10px;
+       
+
+}
+
+.Menu li:hover{
+color: $encima;
+
+  
+}
+
+ul li:hover ul{
+margin-top: 2rem;
+}
+
+ul.Menu ul {
+position: absolute;
+display: none;
+}
+
+ul ul li.subMenu {
+display: block;
+padding-top: 5px;
+border: none;
+}
+
+ul li:hover ul {
+display: block;
+box-shadow: 3px 3px grey;
+}
+
+
+
+nav ul li a:link{
+text-decoration: none;
+}
+
+nav ul li a{
+list-style: none;
+color:white;
+font-variant: small-caps;
+font-stretch: semi-expanded;
+
+/*Subrayado animado*/
+background-image: linear-gradient(currentColor, currentColor);
+background-position: 0% 100%;
+background-repeat: no-repeat;
+background-size: 0% 2px;
+transition: background-size .3s;
+}
+
+a:hover, a:focus {
+background-size: 100% 2px;
+color: $encima;
+box-shadow: inset;
+}
