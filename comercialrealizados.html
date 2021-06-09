@@ -18,9 +18,10 @@
     <header>
        
         <div><img class= "logo" src="img/ESTELOGO.png" alt="Logo de Sassi Herrería"></div>
-       
-        <nav >
-            <ul class="Menu">
+        <input type="checkbox" id="btn-menu">
+        <label for="btn-menu"><img src ="img/menu.png"></label>
+        <nav class = "Menu">
+            <ul class="Menu Menu__li">
                 <li><a href = "index.html">Inicio</a></li>
                 <li><a href = "quienessomos.html">Quiénes Somos</a></li>
                 <li><a href = "#">División Viviendas</a>
@@ -60,24 +61,24 @@
         </section>
 
     </main>
-    <footer class="pie">
-        
+    <footer class="pie_grid">
+        <div>
         <nav>
             <ul >
                 <li><a href = "index.html">Inicio</a></li>
                 <li><a href = "quienessomos.html">Quiénes Somos</a></li>
                 <li><a href = "#">División Viviendas</a>
                     <ul>
-                        <li><a href = "viviendatrabajo.html" class ="subMenu">Modo de Trabajo</a></li>
-                        <li><a href = "viviendarealizados.html" class = "subMenu">Trabajos Realizados</a></li>
+                        <li><a href = "viviendatrabajo.html" >Modo de Trabajo</a></li>
+                        <li><a href = "viviendarealizados.html" >Trabajos Realizados</a></li>
                     </li>
                     </ul>
                 </li>
 
                 <li><a href = "#">División Comercial</a>
                     <ul>
-                        <li><a href = "comercialtrabajo.html" class ="subMenu">Modo de Trabajo</a></li>
-                        <li><a href = "comercialrealizados.html" class = "subMenu">Trabajos Realizados</a></li>
+                        <li><a href = "comercialtrabajo.html" >Modo de Trabajo</a></li>
+                        <li><a href = "comercialrealizados.html">Trabajos Realizados</a></li>
                     </li>
                     </ul>
                 </li>
@@ -86,6 +87,8 @@
                 
             </ul>
         </nav>
+    </div>
+    <div>
         <nav>
             <ul>
                 <li><a href = "#"> <img src="img/mail-send-regular-24.png" alt="Mail"> info@sassi.com</a>
@@ -94,7 +97,7 @@
                     
             </ul>
         </nav>
-       
+    </div> 
         <div class="redes">
             <img src="img/face.svg" alt="Facebook" class="rotate">
             <img src="img/insta.svg" alt="Instagram" class="rotate">
